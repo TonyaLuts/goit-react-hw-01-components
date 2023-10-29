@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { getRandomHexColor } from '../utils/RandomColor';
 
 export const Stats = styled.section`
-  width: 500px;
+  min-width: 360px;
+  max-width: 500px;
+  width: 50%;
   padding-top: ${p => p.theme.spasing(10)};
   margin-top: ${p => p.theme.spasing(10)};
   margin-left: auto;
@@ -27,7 +29,7 @@ export const StatItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: ${p => p.theme.spasing(5)};
+  padding: ${p => p.theme.spasing(2)};
   gap: ${p => p.theme.spasing(2)};
   background-color: ${getRandomHexColor};
   width: 100px;
@@ -35,9 +37,11 @@ export const StatItem = styled.li`
 
 export const Label = styled.span`
   font-weight: 500;
+  color: ${p => p.theme.color.white};
 `;
 
 export const Ppercentage = styled.span`
   font-weight: 500;
   font-size: 25px;
+  color: ${p => p.theme.color.white};
 `;

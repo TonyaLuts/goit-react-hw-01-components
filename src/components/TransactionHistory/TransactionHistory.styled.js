@@ -4,7 +4,8 @@ export const TransactionTable = styled.table`
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  width: 900px;
+  min-width: 360px;
+  width: 50%;
   text-align: center;
   margin-bottom: ${p => p.theme.spasing(10)};
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);

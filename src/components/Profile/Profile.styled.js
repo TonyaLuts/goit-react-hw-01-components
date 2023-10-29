@@ -10,6 +10,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
 `;
 
@@ -49,7 +50,7 @@ export const StatsItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: ${p => p.theme.spasing(2)};
+  gap: ${p => p.theme.spasing(10)};
   border: 0.2px solid ${p => p.theme.color.secondText};
   width: 120px;
   height: 120px;
