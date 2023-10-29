@@ -3,7 +3,7 @@ import { Friends } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
-    <Friends className="friend-list">
+    <Friends>
       {friends.map(friend => (
         <FriendListItem
           avatar={friend.avatar}

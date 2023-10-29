@@ -9,14 +9,15 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <Stats className="statistics">
-      <TitleStats className="title">Upload stats</TitleStats>
+    <Stats>
+      {/* <TitleStats ></TitleStats> */}
+      {title ? <TitleStats>{title}</TitleStats> : null}
 
-      <StatList className="stat-list">
+      <StatList>
         {stats.map(stat => (
-          <StatItem className="item" key={stat.id}>
-            <Label className="label">{stat.label}</Label>
-            <Ppercentage className="percentage">{stat.percentage}%</Ppercentage>
+          <StatItem key={stat.id}>
+            <Label>{stat.label}</Label>
+            <Ppercentage>{stat.percentage}%</Ppercentage>
           </StatItem>
         ))}
       </StatList>

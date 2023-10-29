@@ -5,7 +5,6 @@ export const Stats = styled.section`
   min-width: 360px;
   max-width: 500px;
   width: 50%;
-  padding-top: ${p => p.theme.spasing(10)};
   margin-top: ${p => p.theme.spasing(10)};
   margin-left: auto;
   margin-right: auto;
@@ -13,15 +12,18 @@ export const Stats = styled.section`
 `;
 
 export const TitleStats = styled.h2`
+  font-size: 25px;
   text-align: center;
   text-transform: uppercase;
   opacity: 0.7;
-  margin-bottom: ${p => p.theme.spasing(10)};
+  padding-top: ${p => p.theme.spasing(10)};
+  padding-bottom: ${p => p.theme.spasing(10)};
 `;
 
 export const StatList = styled.ul`
   display: flex;
   justify-content: space-around;
+  /* margin-top: ${p => p.theme.spasing(10)}; */
 `;
 
 export const StatItem = styled.li`
